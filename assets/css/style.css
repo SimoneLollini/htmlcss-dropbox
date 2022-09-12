@@ -4,9 +4,27 @@
     padding: 0;
     box-sizing: border-box;
 }
+.font{
+    font-family: 'Montserrat', sans-serif;
+}
+img{
+    max-width: 100%;
+}
+.logo img{
+    width: 25%;
+}
 
+.button{
+    padding: 0.3rem 0.65rem;
+    width: max-content;
+}
 
-
+.button.primary{
+    background-color: var(--db-primary-button);
+    color: white;
+    font-weight: 300;
+    font-size: 0.75rem;
+}
 /* #endregion common */
 
 /* #region utility */
@@ -92,6 +110,20 @@
     margin-top: 3rem;
 }
 
+.d_flex{
+    display: flex;
+}
+
+.y_center{
+    align-self: center;
+}
+
+.position_r{
+    position: relative;
+}
+.position_a{
+    position: absolute;
+}
 /* #endregion utility */
 
 /* #region debug */
@@ -207,15 +239,58 @@
 /* #region header */
 
 header>.container_fluid {
-    height: 15vh;
+    height: 8vh;
     position: fixed;
-    background-color: var(--db-light-bg);
+    background-color: var(--db-light);
+}
+header .menu{
+    padding: 1rem 1.5rem;
+}
+.menu a{
+    padding: 0.5rem;
+    text-decoration: none;
+    color: var(--db-dark);
+    font-size: 0.75rem;
+    font-weight: 200;
+}
+nav{
+    padding: 0 0.5rem;
+    vertical-align: middle;
 }
 
+nav.d_flex{
+    justify-content: end;
+}
+header .logo{
+  width: 15%;
+}
+
+header .logo img{
+   width: 100%;
+   vertical-align: middle;
+}
 /* #endregion header */
 
 
 /* #region main */
+.introduction{
+    padding-top: 10%;
+    background-color: var(--db-colored-bg);
+    font-size: 0.70rem;
+}
+.introduction h1{
+    font-weight: 800;
+    font-size: 3rem;
+}
+
+.introduction p{
+    
+    padding-bottom:10%;
+}
+
+.introduction .button{
+    margin-bottom: 10%;
+}
 
 .plan>.row {
     justify-content: space-between;
@@ -229,7 +304,10 @@ header>.container_fluid {
 .question {
     border-bottom: 1px solid var(--light-text);
 }
-
+.arrow{
+    padding-top:20%;
+    font-size: 2rem;
+}
 /* #endregion main */
 
 
