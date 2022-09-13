@@ -4,27 +4,58 @@
     padding: 0;
     box-sizing: border-box;
 }
-.font{
-    font-family: 'Montserrat', sans-serif;
+
+.font {
+    font-family: 'Open Sans', sans-serif;
 }
-img{
+
+p{
+    font-size: 0.85rem;
+}
+
+h3{
+    font-size: 1.6rem;
+}
+img {
     max-width: 100%;
 }
-.logo img{
+
+.logo img {
     width: 25%;
 }
 
-.button{
+.button {
     padding: 0.3rem 0.65rem;
     width: max-content;
 }
 
-.button.primary{
+.button.primary {
     background-color: var(--db-primary-button);
     color: white;
     font-weight: 300;
     font-size: 0.75rem;
 }
+
+.button.big{
+    padding: 0.6rem 4rem;
+}
+.dot {
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+
+.dot.selected {
+    border: 0.25rem solid var(--db-primary-button);
+    padding: 0.25rem;
+}
+
+.dot.unselected {
+    padding: 0.4rem;
+    border: 0.1rem solid var(--db-light-bg);
+}
+
+
 /* #endregion common */
 
 /* #region utility */
@@ -103,32 +134,34 @@ img{
 .row {
     display: flex;
     flex-wrap: wrap;
-    padding-top: 3rem;
+   
 }
 
 .mt_3 {
     margin-top: 3rem;
 }
 
-.d_flex{
+.d_flex {
     display: flex;
 }
 
-.y_center{
+.y_center {
     align-self: center;
 }
 
-.position_r{
+.position_r {
     position: relative;
 }
-.position_a{
+
+.position_a {
     position: absolute;
 }
+
 /* #endregion utility */
 
 /* #region debug */
 
-.debug main .container_fluid.introduction {
+.debug main .container_fluid.hero_image {
     background-color: rgb(115, 206, 239);
     height: 400px;
 }
@@ -233,67 +266,74 @@ img{
 
 
 
-
-
-
 /* #region header */
 
 header>.container_fluid {
     height: 8vh;
     position: fixed;
     background-color: var(--db-light);
+    z-index: 1000;
 }
-header .menu{
+
+header .menu {
     padding: 1rem 1.5rem;
 }
-.menu a{
+
+.menu a {
     padding: 0.5rem;
     text-decoration: none;
     color: var(--db-dark);
     font-size: 0.75rem;
     font-weight: 200;
 }
-nav{
+
+nav {
     padding: 0 0.5rem;
     vertical-align: middle;
 }
 
-nav.d_flex{
+nav.d_flex {
     justify-content: end;
 }
-header .logo{
-  width: 15%;
+
+header .logo {
+    width: 15%;
 }
 
-header .logo img{
-   width: 100%;
-   vertical-align: middle;
+header .logo img {
+    width: 100%;
+    vertical-align: middle;
 }
+
 /* #endregion header */
 
 
 /* #region main */
-.introduction{
+.hero_image {
     padding-top: 10%;
     background-color: var(--db-colored-bg);
     font-size: 0.70rem;
+    padding-bottom: 1%;
 }
-.introduction h1{
+
+.hero_image h1 {
     font-weight: 800;
     font-size: 3rem;
+    margin-left: 0;
 }
 
-.introduction p{
-    
-    padding-bottom:10%;
+.hero_image p {
+
+    padding-bottom: 10%;
 }
 
-.introduction .button{
+.hero_image .button {
     margin-bottom: 10%;
 }
 
-.plan>.row {
+.payments>.row {
     justify-content: space-between;
+    padding-top: 3rem;
 }
 
 .team,
@@ -304,9 +344,85 @@ header .logo img{
 .question {
     border-bottom: 1px solid var(--light-text);
 }
-.arrow{
-    padding-top:20%;
+
+.arrow {
+    padding-top: 20%;
     font-size: 2rem;
+}
+
+.payments {
+    margin-top: 15%;
+    
+}
+
+.payments h2 {
+    font-size: 2rem;
+    padding-bottom: 10%;
+
+}
+
+.payments span {
+    padding-right: 1rem;
+}
+
+
+
+.offer.col_3 {
+    flex-grow: 1;
+    margin: 0 1rem;
+    height: 85vh;
+    
+}
+
+.offer.row{
+    margin: 0 -1rem;
+}
+
+.offer_body,
+.offer_head {
+    border: 1px solid var(--db-light-bg);
+    font-weight: 200;
+}
+
+.offer_head {
+    border-bottom: none;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.offer_body {
+    flex-direction: column;
+    height: 100%;
+    padding: 2rem 1.25rem;
+}
+.team_body h3
+{
+    padding-bottom: 1rem;
+}
+.team_body h5{
+    padding-bottom: 2.35rem;
+}
+.team{
+    font-weight: 300;
+}
+.team_top{
+    border-bottom: 1px solid var(--db-light-bg);
+    text-align: center;
+    padding: 0.5rem;
+}
+
+
+.team .row{
+    padding: 1rem;
+}
+.team_body{
+    padding-bottom: 1.rem;
+}
+.team_body .d_flex{
+    justify-content: end;
+}
+.team .button{
+    height: max-content; 
 }
 /* #endregion main */
 
