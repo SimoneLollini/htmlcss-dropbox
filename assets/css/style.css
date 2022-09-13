@@ -380,8 +380,6 @@ header .logo img {
 .offer.col_3 {
     flex-grow: 1;
     margin: 0 1rem;
-    height: 85vh;
-    
 }
 
 .offer.row {
@@ -401,38 +399,48 @@ header .logo img {
 }
 
 .offer_body {
-    flex-direction: column;
-    height: 100%;
+    flex-direction: column; 
     padding: 2rem 1.25rem;
-    
 }
 
 .offer_body>div>div{
 margin-bottom: 1.5rem;
 }
 
-
+.offer_body>.summary>div,
+.offer_body>.details>div{
+    position: relative;
+}
 
 .offer_body .for_whom{
     flex-direction: column;
-    flex-grow: 1;
 }
 .offer_body .details{
     flex-direction: column;
-    flex-grow: 1;
 }
 .offer_body .call_to_action{
     flex-direction: column;
-    flex-grow: 1;
-    
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
 }
 .offer_body .summary{
     flex-direction: column;
-    flex-grow: 1;
 }
 
 
+.offer_body>.summary>h4{
+    padding-bottom: 1rem;
+}
+.offer_body>.summary i,
+.offer_body>.details i{
+    position: absolute;
+    right: 101%;
+    top: 15%;
+}
+.offer_body>.summary i{
+    color: var(--db-primary-button);
 
+}
 .team_body h3 {
     padding-bottom: 1rem;
 }
