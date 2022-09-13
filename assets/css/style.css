@@ -12,9 +12,17 @@
 p {
     font-size: 0.85rem;
 }
-
+h2 {
+    font-size: 2rem;
+    padding-bottom: 10%;
+}
 h3 {
     font-size: 1.6rem;
+}
+
+h4 {
+    font-size: 1.25rem;
+    padding-bottom: 1rem;
 }
 
 img {
@@ -71,7 +79,7 @@ img {
     margin: auto;
 }
 
-.container_sm{
+.container_sm {
     width: 55%;
     margin: auto;
 }
@@ -82,6 +90,7 @@ img {
     --light-text: #999999;
     --db-light-bg: #D0D0D3;
     --db-lighter-bg: #F5F5F5;
+    --db-h2-secondary: #61082B;
     --db-light: white;
     --db-dark: black;
 }
@@ -139,12 +148,14 @@ img {
     flex-wrap: wrap;
 
 }
-
+.my_3{
+    margin: 3rem 0;
+}
 .mt_3 {
     margin-top: 3rem;
 }
 
-.mb_075{
+.mb_075 {
     margin-bottom: 0.75rem;
 }
 
@@ -317,6 +328,8 @@ header .logo img {
 
 
 /* #region main */
+
+/* #region hero_image */
 .hero_image {
     padding-top: 10%;
     background-color: var(--db-colored-bg);
@@ -339,23 +352,18 @@ header .logo img {
     margin-bottom: 10%;
 }
 
-.payments>.row {
-    justify-content: space-between;
-    padding-top: 3rem;
-}
-
-.team,
-.team.top {
-    border: 1px solid var(--db-light-bg);
-}
-
-.question {
-    border-bottom: 1px solid var(--light-text);
-}
-
 .arrow {
     padding-top: 20%;
     font-size: 3rem;
+}
+
+/* #endregion hero_image */
+
+
+/* #region payments */
+.payments>.row {
+    justify-content: space-between;
+    padding-top: 3rem;
 }
 
 .payments {
@@ -363,23 +371,25 @@ header .logo img {
 
 }
 
-.payments h2 {
-    font-size: 2rem;
-    padding-bottom: 10%;
-
-}
+.payments 
 
 .payments span {
     padding-right: 1rem;
 }
 
-.offer{
+/* #endregion payments */
+
+
+/* #region payments>col da_rivedere */
+.offer {
     font-size: 0.65rem;
+
 }
 
 .offer.col_3 {
     flex-grow: 1;
     margin: 0 1rem;
+
 }
 
 .offer.row {
@@ -399,48 +409,63 @@ header .logo img {
 }
 
 .offer_body {
-    flex-direction: column; 
+    flex-direction: column;
     padding: 2rem 1.25rem;
+    height: 100%;
 }
 
-.offer_body>div>div{
-margin-bottom: 1.5rem;
+.offer_body>div>div {
+    margin-bottom: 1.5rem;
 }
 
 .offer_body>.summary>div,
-.offer_body>.details>div{
+.offer_body>.details>div {
     position: relative;
 }
 
-.offer_body .for_whom{
+.offer_body .for_whom {
     flex-direction: column;
 }
-.offer_body .details{
+
+.offer_body .details {
     flex-direction: column;
 }
-.offer_body .call_to_action{
+
+.offer_body .call_to_action {
     flex-direction: column;
     margin-bottom: 2rem;
     padding-bottom: 1rem;
 }
-.offer_body .summary{
+
+.offer_body .summary {
     flex-direction: column;
 }
 
 
-.offer_body>.summary>h4{
+.offer_body>.summary>h4 {
     padding-bottom: 1rem;
 }
+
 .offer_body>.summary i,
-.offer_body>.details i{
+.offer_body>.details i {
     position: absolute;
     right: 101%;
     top: 15%;
 }
-.offer_body>.summary i{
+
+.offer_body>.summary i {
     color: var(--db-primary-button);
 
 }
+
+/* #endregion payments>col da_rivedere */
+
+/* #region team */
+.team,
+.team.top {
+    border: 1px solid var(--db-light-bg);
+}
+
 .team_body h3 {
     padding-bottom: 1rem;
 }
@@ -460,7 +485,7 @@ margin-bottom: 1.5rem;
 }
 
 
-.team .row {
+.team .row{
     padding: 1rem;
 }
 
@@ -474,6 +499,51 @@ margin-bottom: 1.5rem;
 
 .team .button {
     height: max-content;
+}
+
+/* #endregion team */
+
+/* #region get_in_touch */
+
+.get_in_touch {
+    padding: 15% 0;
+}
+
+.get_in_touch .col_5 {
+    padding: 3rem 1.75rem;
+    font-weight: 3 00;
+}
+
+/* #endregion get_in_touch */
+
+/* #region db_business */
+
+.db_busines .col_4{
+    padding-bottom: 5%;
+}
+
+/* #endregion db_business */
+
+/* #region call_to_action */
+
+.call_to_action-team a{
+    color: var(--db-primary-button);
+    font-size: 0.75rem;
+}
+
+
+/* #endregion call_to_action */
+
+
+/* #region feedback users */
+
+
+
+/* #endregion feedback users */
+
+
+.question {
+    border-bottom: 1px solid var(--light-text);
 }
 
 /* #endregion main */
