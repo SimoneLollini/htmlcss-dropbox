@@ -541,10 +541,35 @@ header .logo img {
 
 /* #endregion feedback users */
 
+/* #region call_to_action-enterprise */
 
+.call_to_action-enterprise{
+    background-color: var(--db-colored-bg);
+    
+}
+
+.call_to_action-enterprise{
+    padding: 5%;
+}
+.call_to_action-enterprise h2{
+    color: var(--db-h2-secondary);
+}
+
+/* #endregion call_to_action-enterprise */
+
+/* #region q&a */
 .question {
     border-bottom: 1px solid var(--light-text);
+    padding: 3% 0;
 }
+h2.question{
+    padding-bottom: 5%;
+}
+
+
+
+/* #endregion q&a */
+
 
 /* #endregion main */
 
