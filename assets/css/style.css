@@ -144,6 +144,10 @@ img {
     margin-top: 3rem;
 }
 
+.mb_075{
+    margin-bottom: 0.75rem;
+}
+
 .d_flex {
     display: flex;
 }
@@ -159,6 +163,7 @@ img {
 .position_a {
     position: absolute;
 }
+
 
 /* #endregion utility */
 
@@ -350,7 +355,7 @@ header .logo img {
 
 .arrow {
     padding-top: 20%;
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 .payments {
@@ -368,7 +373,9 @@ header .logo img {
     padding-right: 1rem;
 }
 
-
+.offer{
+    font-size: 0.65rem;
+}
 
 .offer.col_3 {
     flex-grow: 1;
@@ -399,6 +406,13 @@ header .logo img {
     padding: 2rem 1.25rem;
     
 }
+
+.offer_body>div>div{
+margin-bottom: 1.5rem;
+}
+
+
+
 .offer_body .for_whom{
     flex-direction: column;
     flex-grow: 1;
@@ -409,13 +423,12 @@ header .logo img {
 }
 .offer_body .call_to_action{
     flex-direction: column;
-    flex-grow: 2    ;
+    flex-grow: 1;
     
 }
 .offer_body .summary{
     flex-direction: column;
-    flex-grow: 2;
-    
+    flex-grow: 1;
 }
 
 
