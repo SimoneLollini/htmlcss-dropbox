@@ -9,13 +9,14 @@
     font-family: 'Open Sans', sans-serif;
 }
 
-p{
+p {
     font-size: 0.85rem;
 }
 
-h3{
+h3 {
     font-size: 1.6rem;
 }
+
 img {
     max-width: 100%;
 }
@@ -36,9 +37,10 @@ img {
     font-size: 0.75rem;
 }
 
-.button.big{
-    padding: 0.6rem 4rem;
+.button.big {
+    padding: 0.4rem 2rem;
 }
+
 .dot {
     border-radius: 50%;
     vertical-align: middle;
@@ -64,13 +66,14 @@ img {
     margin: auto;
 }
 
-.container_sm {
+.container_med {
     width: 70%;
     margin: auto;
 }
 
-.container_sm {
-    height: 100%;
+.container_sm{
+    width: 55%;
+    margin: auto;
 }
 
 :root {
@@ -134,7 +137,7 @@ img {
 .row {
     display: flex;
     flex-wrap: wrap;
-   
+
 }
 
 .mt_3 {
@@ -352,7 +355,7 @@ header .logo img {
 
 .payments {
     margin-top: 15%;
-    
+
 }
 
 .payments h2 {
@@ -374,7 +377,7 @@ header .logo img {
     
 }
 
-.offer.row{
+.offer.row {
     margin: 0 -1rem;
 }
 
@@ -394,36 +397,64 @@ header .logo img {
     flex-direction: column;
     height: 100%;
     padding: 2rem 1.25rem;
+    
 }
-.team_body h3
-{
+.offer_body .for_whom{
+    flex-direction: column;
+    flex-grow: 1;
+}
+.offer_body .details{
+    flex-direction: column;
+    flex-grow: 1;
+}
+.offer_body .call_to_action{
+    flex-direction: column;
+    flex-grow: 2    ;
+    
+}
+.offer_body .summary{
+    flex-direction: column;
+    flex-grow: 2;
+    
+}
+
+
+
+.team_body h3 {
     padding-bottom: 1rem;
 }
-.team_body h5{
+
+.team_body h5 {
     padding-bottom: 2.35rem;
 }
-.team{
+
+.team {
     font-weight: 300;
 }
-.team_top{
+
+.team_top {
     border-bottom: 1px solid var(--db-light-bg);
     text-align: center;
     padding: 0.5rem;
 }
 
 
-.team .row{
+.team .row {
     padding: 1rem;
 }
-.team_body{
+
+.team_body {
     padding-bottom: 1.rem;
 }
-.team_body .d_flex{
+
+.team_body .d_flex {
     justify-content: end;
 }
-.team .button{
-    height: max-content; 
+
+.team .button {
+    height: max-content;
 }
+
 /* #endregion main */
 
 
