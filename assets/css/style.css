@@ -188,7 +188,61 @@ img {
     position: absolute;
 }
 
+.aspect_radio_square{
+    padding-top: 100%;
+}
 
+.aspect_radio_square img{
+    width: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: invert(1);
+}
+
+.aspect_radio_square.designit{
+    background-color: var(--bg-designit);
+}
+.aspect_radio_square.arizona{
+    background-color: var(--db-h2-secondary);
+}
+.aspect_radio_square.florida{
+    background-color: var(--bg-florida-u);
+}
+.aspect_radio_square.topps{
+    background-color: var(--danger);
+}
+
+.feedback .text{
+    background-color: var(--db-lighter-bg);
+    padding: 3%;
+    font-size: 0.85rem;
+    font-weight: 300;
+}
+.feedback .text img{
+    width: 60%;
+}
+.feedback .text hr{
+    width: 20%;
+    margin: 10% 0;
+}
+.feedback .text p{
+    padding-bottom: 10%;
+}
+
+.aspect_radio_square.world{
+    background-color: var(--bg-w-b-relief);
+}
+.aspect_radio_square.hearts{
+    background-color: var(--db-colored-bg);
+}
+.aspect_radio_square.lonely{
+    background-color: var(--bg-l-planet);
+}
+.aspect_radio_square.clear{
+    background-color: var(--warning);
+}
 /* #endregion utility */
 
 /* #region debug */
@@ -300,7 +354,6 @@ img {
 /* #endregion debug */
 
 
-
 /* #region header */
 
 header>.container_fluid {
@@ -341,7 +394,6 @@ header .logo img {
 }
 
 /* #endregion header */
-
 
 /* #region main */
 
@@ -532,7 +584,6 @@ header .logo img {
 
 /* #endregion call_to_action */
 
-
 /* #region feedback users */
 
 /* #endregion feedback users */
@@ -581,9 +632,7 @@ h2.question {
 
 /* #endregion q&a */
 
-
 /* #endregion main */
-
 
 /* #region footer */
 
