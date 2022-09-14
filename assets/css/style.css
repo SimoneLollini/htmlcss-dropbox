@@ -67,7 +67,12 @@ img {
     border: 0.1rem solid var(--db-light-bg);
 }
 
-
+.text_d_n{
+    text-decoration: none;
+}
+a{
+    color: var(--db-primary-button);
+}
 /* #endregion common */
 
 /* #region utility */
@@ -103,9 +108,11 @@ img {
     --warning: #FFD830;
 
 }
-.d_iblock{
+
+.d_iblock {
     display: inline-block;
 }
+
 .col_1 {
     width: calc(100% / 12 *1);
 }
@@ -188,11 +195,11 @@ img {
     position: absolute;
 }
 
-.aspect_radio_square{
+.aspect_radio_square {
     padding-top: 100%;
 }
 
-.aspect_radio_square img{
+.aspect_radio_square img {
     width: 60%;
     position: absolute;
     top: 50%;
@@ -201,48 +208,8 @@ img {
     filter: invert(1);
 }
 
-.aspect_radio_square.designit{
-    background-color: var(--bg-designit);
-}
-.aspect_radio_square.arizona{
-    background-color: var(--db-h2-secondary);
-}
-.aspect_radio_square.florida{
-    background-color: var(--bg-florida-u);
-}
-.aspect_radio_square.topps{
-    background-color: var(--danger);
-}
 
-.feedback .text{
-    background-color: var(--db-lighter-bg);
-    padding: 3%;
-    font-size: 0.85rem;
-    font-weight: 300;
-}
-.feedback .text img{
-    width: 60%;
-}
-.feedback .text hr{
-    width: 20%;
-    margin: 10% 0;
-}
-.feedback .text p{
-    padding-bottom: 10%;
-}
 
-.aspect_radio_square.world{
-    background-color: var(--bg-w-b-relief);
-}
-.aspect_radio_square.hearts{
-    background-color: var(--db-colored-bg);
-}
-.aspect_radio_square.lonely{
-    background-color: var(--bg-l-planet);
-}
-.aspect_radio_square.clear{
-    background-color: var(--warning);
-}
 /* #endregion utility */
 
 /* #region debug */
@@ -464,39 +431,48 @@ header .logo img {
     border: 1px solid var(--db-light-bg);
     font-size: 0.85rem;
     font-weight: 300;
-   
+
 }
-.payments .col_top{
+
+.payments .col_top {
     border-bottom: 1px solid var(--db-light-bg);
     padding: 2%;
     text-align: center;
 }
-.payments .col_body{
+
+.payments .col_body {
     padding: 10% 5%;
 }
+
 .payments .col_body h3,
 .payments .col_body h5,
 .payments .col_body .pay_frequency,
-.payments .col_body div.d_flex{
+.payments .col_body div.d_flex {
     padding-bottom: 5%;
 }
-.payments .col_body .button{
+
+.payments .col_body .button {
     margin: 15% 0;
 }
-.payments .col_body .pay_frequency{
+
+.payments .col_body .pay_frequency {
     color: var(--light-text);
 }
-.payments .col_body .buy_now{
+
+.payments .col_body .buy_now {
     margin-bottom: 15%;
 }
-.payments>.row>.col_3 .item{
+
+.payments>.row>.col_3 .item {
     padding-right: 5%;
 }
-.active_b{
+
+.active_b {
     border-bottom: 1px solid var(--db-light-bg);
     padding-bottom: 15%;
 }
-.payments .col_body .item.primary{
+
+.payments .col_body .item.primary {
     color: var(--db-primary-button);
 }
 
@@ -555,7 +531,14 @@ header .logo img {
     padding: 3rem 1.75rem;
     font-weight: 3 00;
 }
+.button.trasp{
+    margin-top: 15%;
+    color: black;
+    border: 1px solid var(--db-dark);
+    font-weight: 300;
+    font-size: 0.85rem;
 
+}
 /* #endregion partner */
 
 /* #region db_business */
@@ -585,7 +568,58 @@ header .logo img {
 /* #endregion call_to_action */
 
 /* #region feedback users */
+.aspect_radio_square.designit {
+    background-color: var(--bg-designit);
 
+}
+
+.aspect_radio_square.arizona {
+    background-color: var(--db-h2-secondary);
+}
+
+.aspect_radio_square.florida {
+    background-color: var(--bg-florida-u);
+}
+
+.aspect_radio_square.topps {
+    background-color: var(--danger);
+}
+
+.feedback .text {
+    background-color: var(--db-lighter-bg);
+    padding: 3%;
+    font-size: 0.85rem;
+    font-weight: 300;
+}
+
+.feedback .text img {
+    width: 60%;
+}
+
+.feedback .text hr {
+    width: 20%;
+    margin: 10% 0;
+}
+
+.feedback .text p {
+    padding-bottom: 10%;
+}
+
+.aspect_radio_square.world {
+    background-color: var(--bg-w-b-relief);
+}
+
+.aspect_radio_square.hearts {
+    background-color: var(--db-colored-bg);
+}
+
+.aspect_radio_square.lonely {
+    background-color: var(--bg-l-planet);
+}
+
+.aspect_radio_square.clear {
+    background-color: var(--warning);
+}
 /* #endregion feedback users */
 
 /* #region call_to_action-enterprise */
