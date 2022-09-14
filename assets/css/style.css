@@ -103,7 +103,9 @@ img {
     --warning: #FFD830;
 
 }
-
+.d_iblock{
+    display: inline-block;
+}
 .col_1 {
     width: calc(100% / 12 *1);
 }
@@ -206,8 +208,11 @@ img {
     border: 1px solid;
 }
 
-.debug .col_4 {
-    background-color: rgb(226, 226, 139);
+.debug .col_3 {
+    background-color: rgb(139, 213, 226);
+    border: 1px solid;
+    height: 80vh;
+
 }
 
 .debug .col_8 {
@@ -345,7 +350,6 @@ header .logo img {
     padding-top: 10%;
     background-color: var(--db-colored-bg);
     font-size: 0.70rem;
-    padding-bottom: 1%;
 }
 
 .hero_image h1 {
@@ -354,9 +358,12 @@ header .logo img {
     margin-left: 0;
 }
 
-.hero_image p {
+.hero_image img {
+    top: 10%;
+}
 
-    padding-bottom: 10%;
+.hero_image p {
+    padding: 10% 0;
 }
 
 .hero_image .button {
@@ -371,103 +378,77 @@ header .logo img {
 /* #endregion hero_image */
 
 
-/* #region payments */
-.payments>.row {
-    justify-content: space-between;
-    padding-top: 3rem;
-}
+/* #region payments_top */
 
 .payments {
     margin-top: 15%;
 
 }
 
+.payments.top {
+    padding-bottom: 5%;
+}
+
+.payments.top h2 {
+    padding-bottom: 5%;
+}
+
 .payments .payments span {
     padding-right: 1rem;
 }
 
-/* #endregion payments */
+/* #endregion payments_top */
 
 
-/* #region payments>col da_rivedere */
-.offer {
-    font-size: 0.65rem;
+/* #region payments>col */
 
+.payments>.row {
+    margin-left: -5%;
 }
 
-.offer.col_3 {
+.payments>.row>.col_3 {
     flex-grow: 1;
-    margin: 0 1rem;
-
-}
-
-.offer.row {
-    margin: 0 -1rem;
-}
-
-.offer_body,
-.offer_head {
+    margin-left: 5%;
     border: 1px solid var(--db-light-bg);
-    font-weight: 200;
+    font-size: 0.85rem;
+    font-weight: 300;
+   
 }
-
-.offer_head {
-    border-bottom: none;
+.payments .col_top{
+    border-bottom: 1px solid var(--db-light-bg);
+    padding: 2%;
     text-align: center;
-    padding: 0.5rem;
 }
-
-.offer_body {
-    flex-direction: column;
-    padding: 2rem 1.25rem;
-    height: 100%;
+.payments .col_body{
+    padding: 10% 5%;
 }
-
-.offer_body>div>div {
-    margin-bottom: 1.5rem;
+.payments .col_body h3,
+.payments .col_body h5,
+.payments .col_body .pay_frequency,
+.payments .col_body div.d_flex{
+    padding-bottom: 5%;
 }
-
-.offer_body>.summary>div,
-.offer_body>.details>div {
-    position: relative;
+.payments .col_body .button{
+    margin: 15% 0;
 }
-
-.offer_body .for_whom {
-    flex-direction: column;
+.payments .col_body .pay_frequency{
+    color: var(--light-text);
 }
-
-.offer_body .details {
-    flex-direction: column;
+.payments .col_body .buy_now{
+    margin-bottom: 15%;
 }
-
-.offer_body .call_to_action {
-    flex-direction: column;
-    margin-bottom: 2rem;
-    padding-bottom: 1rem;
+.payments>.row>.col_3 .item{
+    padding-right: 5%;
 }
-
-.offer_body .summary {
-    flex-direction: column;
+.active_b{
+    border-bottom: 1px solid var(--db-light-bg);
+    padding-bottom: 15%;
 }
-
-
-.offer_body>.summary>h4 {
-    padding-bottom: 1rem;
-}
-
-.offer_body>.summary i,
-.offer_body>.details i {
-    position: absolute;
-    right: 101%;
-    top: 15%;
-}
-
-.offer_body>.summary i {
+.payments .col_body .item.primary{
     color: var(--db-primary-button);
-
 }
 
-/* #endregion payments>col da_rivedere */
+/* #endregion payments>col */
 
 /* #region team */
 .team,
@@ -539,9 +520,10 @@ header .logo img {
 /* #endregion db_business */
 
 /* #region call_to_action */
-.call_to_action-team{
+.call_to_action-team {
     padding: 10% 0;
 }
+
 .call_to_action-team a {
     color: var(--db-primary-button);
     font-size: 0.75rem;
