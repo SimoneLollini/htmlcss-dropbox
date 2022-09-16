@@ -182,7 +182,9 @@ a{
 .d_flex {
     display: flex;
 }
-
+.align_center{
+    align-items: center;
+}
 .y_center {
     align-self: center;
 }
@@ -324,14 +326,13 @@ a{
 /* #region header */
 
 header>.container_fluid {
-    height: 8vh;
     position: fixed;
     background-color: var(--db-light);
     z-index: 1000;
 }
 
 header .menu {
-    padding: 1rem 1.5rem;
+    padding: 1%;
 }
 
 .menu a {
@@ -707,3 +708,12 @@ footer .col_1 div {
 }
 
 /* #endregion footer */
+
+
+/* #region :hover */
+.button:hover{
+    filter: brightness(1.5);
+    transition: 300ms;
+}
+
+/* #endregion :hover */
