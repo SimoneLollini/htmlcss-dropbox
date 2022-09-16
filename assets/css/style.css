@@ -51,18 +51,18 @@ img {
     padding: 0.4rem 2rem;
 }
 
-.dot {
+.inp_radio {
     border-radius: 50%;
     vertical-align: middle;
 }
 
 
-.dot.selected {
+.inp_radio.selected {
     border: 0.25rem solid var(--db-primary-button);
     padding: 0.25rem;
 }
 
-.dot.unselected {
+.inp_radio.unselected {
     padding: 0.4rem;
     border: 0.1rem solid var(--db-light-bg);
 }
