@@ -379,7 +379,8 @@ header .logo img {
 }
 
 .hero_image img {
-    top: 10%;
+    top: 15%;
+    left: 0;
 }
 
 .hero_image p {
